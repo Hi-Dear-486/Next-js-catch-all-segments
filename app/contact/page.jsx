@@ -1,21 +1,24 @@
 "use client";
+
 import { useRouter } from "next/navigation";
 import React from "react";
-// export const metadata = {
-//   title: "Contact",
-// };
+
 const Contact = () => {
   const router = useRouter();
-  console.log(router);
-  const handleclick = () => {
-    // sucessfull swal fire after that
-    // redirect to home page
+
+  const handleClick = async () => {
+    // Show success message (e.g., using SweetAlert)
+    // You can uncomment the below line and integrate SweetAlert if needed
+    // Swal.fire('Success!', 'Your message has been sent.', 'success');
+
+    // Redirect to home page
     router.push("/");
   };
+
   return (
     <div>
-      Contact
-      <button onClick={handleclick}>submit</button>
+      <h1>Contact</h1>
+      <button onClick={handleClick}>Submit</button>
     </div>
   );
 };

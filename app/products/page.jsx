@@ -3,6 +3,9 @@ import { Card } from "flowbite-react";
 import { FcRating } from "react-icons/fc";
 import Link from "next/link";
 import { productItems } from "../api/customapi";
+export const metadata = {
+  title: "Services",
+};
 const Services = () => {
   return (
     <>

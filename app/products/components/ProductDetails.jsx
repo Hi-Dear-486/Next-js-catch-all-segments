@@ -3,6 +3,8 @@ import { productItems } from "@/app/api/customapi";
 import { FcRating } from "react-icons/fc";
 import Link from "next/link";
 
+
+
 const ProductDetails = ({ Detail: { slugs } }) => {
   console.log("check the product details params", slugs);
   const detailInfo = productItems[slugs];
